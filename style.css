@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+:root {
+  /* Color Palette */
+  --color-primary-dark: #2c3e50;    /* A dark, slate blue for headers/accents */
+  --color-primary-light: #3498db;   /* A bright, clear blue for buttons/links */
+  --color-bg-main: #ecf0f1;         /* A very light grey for the main page background */
+  --color-bg-card: #ffffff;        /* Plain white for content cards/sections */
+  --color-text-dark: #34495e;       /* A dark, soft grey for primary text, easier on the eyes than pure black */
+  --color-text-light: #ffffff;      /* Pure white for text on dark backgrounds */
+  --color-border: #bdc3c7;          /* A subtle grey for borders */
+
+  /* Font Families */
+  --font-family-main: 'Poppins', sans-serif; /* Our primary font, with a fallback to a generic sans-serif */
+
+  /* Spacing & Borders */
+  --spacing-unit: 1rem; /* Base unit for margins, padding (e.g., 1rem, 1.5rem, 2rem) */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+}
+
+/* ========================================= */
+/*      NEW: GLOBAL BASE STYLES              */
+/* ========================================= */
+
+/*
+  Now, let's USE the variables we defined to set up some basic styles on the body.
+  This applies our chosen font and background color to the whole page.
+*/
+body {
+  font-family: var(--font-family-main); /* Apply our Poppins font */
+  background-color: var(--color-bg-main); /* Set the main background color */
+  color: var(--color-text-dark); /* Set the default text color */
+  background-color: #e6ccb2;
+}
+.navbar{
+    background-color: #7f5539;
+}
+.Mycontainer{
+    display: inline-flex;
+    width: 100vw;
+    margin: 0px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.some{
+    margin: 0px;
+}
+
+#history{
+    height: 50px;
+    width: 20%;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: #ede0d4;
+}
+#weatherDetails{
+    height: 300px;
+    width: 80%;
+    flex: 8;
+    margin: 10px;
+    display: block;
+}
+#cards{
+    display: flex;
+    justify-content: space-between;
+}
+#details{
+    display: flex;
+    flex-direction: column;
+    background-color: #ede0d4;
+    color: #ffffff;
+}
+#currentWeather{
+    text-align: center;
+    height: 30px;
+    margin: 5px 0px 16px 15px;
+    color: #34495e;    
+}
+p{
+    height: 30px;
+    color: #34495e;
+    margin-bottom: 8px;
+    margin-left: 15px;
+}
+.forecast-card {
+
+  flex: 1;
+  margin-right: 2px;  
+  background-color: #ede0d4;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-unit);
+  color: #34495e;
+  text-align: center;
+}
